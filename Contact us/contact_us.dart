@@ -85,8 +85,17 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
+            floatingActionButton: FloatingActionButton(
+        onPressed: () {},
 
-            //backgroundColor: Colors.yellow[250],
+        child: Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            image: DecorationImage(image: AssetImage('images/chatbot.png'), fit: BoxFit.fill),
+          ),
+        )),
             body: SafeArea(
                 child: Column(
               children: [
@@ -96,11 +105,11 @@ class MyApp extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.network(
-                      'https://th.bing.com/th/id/R.ad87952193bbbba244aa319c990c266e?rik=qOCC54B9qQAz3Q&riu=http%3a%2f%2fmscw.ac.in%2fresources%2fimg%2fslider%2fcol2.jpg&ehk=7CE1DKAp2EXaQj0C3Tn4kSYMZ0R%2fihTU3NbD%2bNbQxp8%3d&risl=&pid=ImgRaw&r=0',
-                      width: 400,
-                      height: 200,
-                      fit: BoxFit.cover,
-                    ),
+                    'https://th.bing.com/th/id/R.ad87952193bbbba244aa319c990c266e?rik=qOCC54B9qQAz3Q&riu=http%3a%2f%2fmscw.ac.in%2fresources%2fimg%2fslider%2fcol2.jpg&ehk=7CE1DKAp2EXaQj0C3Tn4kSYMZ0R%2fihTU3NbD%2bNbQxp8%3d&risl=&pid=ImgRaw&r=0',
+                    width: 400,
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 Card(
                   //padding:EdgeInsets.all(10.0),
@@ -118,7 +127,7 @@ class MyApp extends StatelessWidget {
                             ),
                             child: Icon(
                               Icons.call,
-                              color: Color(0xFF6C6C6C),
+                              color: Colors.black,
                               size: 30.0,
                             ),
                           ),
@@ -127,12 +136,14 @@ class MyApp extends StatelessWidget {
                       SizedBox(
                         width: 20.0,
                       ),
-                      Text('23236102', 
-                      style:GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                                 color: Color(0xFF525252),
-                                 fontSize: 13,),
-                      ),
+                      Text(
+                        '23236102',
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: Colors.black,
+                            fontSize: 13,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -142,20 +153,20 @@ class MyApp extends StatelessWidget {
                 ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 13.0, horizontal: 13.0),
-                  color: Colors.grey[200],
+                  color: Color(0xFFF0F0F0),
                   child: Row(
                     children: [
                       Center(
                         child: Center(
                           child: Container(
-                             padding: EdgeInsets.all(8),
+                            padding: EdgeInsets.all(8),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(7.0)),
                               color: Color(0xFFFFBA15),
                             ),
                             child: Icon(
                               Icons.phone_android_outlined,
-                              color: Color(0xFF6C6C6C),
+                              color: Colors.black,
                               size: 30.0,
                             ),
                           ),
@@ -164,12 +175,14 @@ class MyApp extends StatelessWidget {
                       SizedBox(
                         width: 20.0,
                       ),
-                      Text('23221449, 23237291',
-                      style:GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                                 color: Color(0xFF525252),
-                                 fontSize: 13,),
-                      ),
+                      Text(
+                        '23221449, 23237291',
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: Colors.black,
+                            fontSize: 13,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -177,18 +190,18 @@ class MyApp extends StatelessWidget {
                 Card(
                   //padding:EdgeInsets.all(10.0),
                   margin: EdgeInsets.symmetric(vertical: 13.0, horizontal: 13.0),
-                  color: Colors.grey[200],
+                  color: Color(0xFFF0F0F0),
                   child: Row(
                     children: [
                       Container(
-                         padding: EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(7.0)),
                           color: Color(0xFFFFBA15),
                         ),
                         child: Icon(
                           Icons.mail,
-                          color: Color(0xFF6C6C6C),
+                          color: Colors.black,
                           size: 30.0,
                         ),
                       ),
@@ -202,7 +215,7 @@ class MyApp extends StatelessWidget {
                             textAlign: TextAlign.left,
                             style: GoogleFonts.roboto(
                               textStyle: TextStyle(
-                                color: Color(0xFF525252),
+                                color: Colors.black,
                                 fontSize: 13,
                               ),
                             ),
@@ -217,18 +230,18 @@ class MyApp extends StatelessWidget {
                 ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 13.0, horizontal: 13.0),
-                  color: Colors.grey[200],
+                  color: Color(0xFFF0F0F0),
                   child: Row(
                     children: [
                       Container(
                         padding: EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(7.0)),
-                          color:Color(0xFFFFBA15),
+                          color: Color(0xFFFFBA15),
                         ),
                         child: Icon(
                           Icons.mail,
-                          color: Color(0xFF6C6C6C),
+                          color: Colors.black,
                           size: 30.0,
                         ),
                       ),
@@ -242,7 +255,7 @@ class MyApp extends StatelessWidget {
                             textAlign: TextAlign.left,
                             style: GoogleFonts.roboto(
                               textStyle: TextStyle(
-                                 color: Color(0xFF525252),
+                                color: Colors.black,
                                 fontSize: 13,
                               ),
                             ),
@@ -265,26 +278,31 @@ class MyApp extends StatelessWidget {
                         ),
                         child: Icon(
                           Icons.language_outlined,
-                          color: Color(0xFF6C6C6C),
+                          color: Colors.black,
                           size: 30.0,
                         ),
                       ),
                       SizedBox(
                         width: 20.0,
                       ),
-                      Text('Visit Our Website',
-                      style:GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                                 color: Color(0xFF525252),
-                                 fontSize: 13,),
-                      ),
+                      Text(
+                        'Visit Our Website',
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: Colors.black,
+                            fontSize: 13,
+                          ),
+                        ),
                       ),
                     ],
                   ),
                 ),
               ],
             ))));
+
+        
   }
+  
 }
 
 class CustomListStyle extends StatelessWidget {
@@ -322,19 +340,7 @@ class CustomListStyle extends StatelessWidget {
         ),
       ),
     );
-    floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Container(
-          width: 100,
-          height: 100,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            image: DecorationImage(image: AssetImage('images/chatbot.png'), fit: BoxFit.fill),
-          ),
-           ),
-    );
+    
   }
   
-  
 }
-
